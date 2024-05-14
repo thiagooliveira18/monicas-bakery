@@ -1,0 +1,37 @@
+Dashboard:
+- Faturamento/mês;
+
+Funcionalidade:
+- Botão para Registrar receita;
+- Botão para Registrar venda;
+- Botão para Registrar preço dos produtos para produção;
+- Botão para exibir o dashboard com faturamento, com disponibilidade pra mostrar da semana, mês, ano;
+
+API
+Utilizando PostgreSQL e MongoDB;
+
+Modelo de dados:
+- Receita:
+	- Id
+	- Nome String;
+	- ingredientes Array;
+		- Nome ingrediente String;
+		- Quantidade Number;
+	- Valor de Venda Number;
+
+- Compra
+	- Id;
+	- Produto Array;
+		- Id_produto;
+		- nome String;
+		- preço Number;
+		- Tipo de medida String;
+		- Quantidade String;
+
+- Venda:
+	- Id;
+	- Data;
+	- Lista de Vendas Array;
+		- Id;
+		- Produto Receita;
+	- Faturamento Number;
